@@ -1,0 +1,830 @@
+﻿@model Rocky.Models.MailRequest
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div>
+
+    <!--=================================
+    =            Page Slider            =
+    ==================================-->
+    <div class="hero-slider">
+        <!-- Slider Item -->
+        <div class="slider-item slide1" style="background-image:url(images/slider/slider-bg-1.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Slide Content Start -->
+                        <div class="content style text-center">
+                            <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">Personalised LifeStyle Management</h2>
+                            <p class="tag-text mb-4" data-animation-in="slideInRight">Exploiting the potential of Nutrigenomics Pharmacogenomics through Personalization</p>
+                            <a href=@Url.Action("Contact", "Home") class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">GET IN TOUCH</a>
+                        </div>
+                        <!-- Slide Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Item -->
+        <div class="slider-item" style="background-image:url(images/slider/slider-bg-2.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Slide Content Start-->
+                        <div class="content style text-center">
+                            <h2 class="text-white" data-animation-in="slideInRight">We Care About Your Health</h2>
+                            <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Ensure maximum efficiency with minimal adverse effects by unlocking genetic makeup</p>
+                            <a href=@Url.Action("About", "Home") class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
+                        </div>
+                        <!-- Slide Content End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Item -->
+        <div class="slider-item" style="background-image:url(images/slider/slider-bg-3.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Slide Content Start -->
+                        <div class="content text-center style">
+                            <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Empower your practice</h2>
+                            <p class="tag-text mb-4" data-animation-in="slideInLeft">Collaborate to fuel your future</p>
+                            <a href=@Url.Action("Nutrigenomics", "Home" ) class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">Our Services</a>
+                        </div>
+                        <!-- Slide Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====  End of Page Slider  ====-->
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-block row no-gutters">
+                <div class="col-lg-4 col-md-6 emmergency item">
+                    <i class="fa fa-phone"></i>
+                    <h2>Call Us</h2>
+                    <a href="tel:1-800-700-6200">+918983975006</a>
+                    <p>Innovation in Genetic Wellness</p>
+                </div>
+                <div class="col-lg-4 col-md-6 top-doctor item">
+                    <i class="fa fa-stethoscope"></i>
+                    <h2>About Us</h2>
+                    <p>
+                        Sukama Meditech is instrumental in accelerating the idea of wellbeing among people across the globe by introducing the concepts of Nutrigenomics and Pharmacogenomics...
+                    </p>
+                    <a href=@Url.Action("About", "Home") class="btn btn-main">Read more</a>
+                </div>
+                <div class="col-lg-4 col-md-12 working-time item">
+                    <i class="fa fa-hourglass-o"></i>
+                    <h2>Working Hours</h2>
+                    <ul class="w-hours">
+                        <li>Mon - Fri - <span>9:00 - 17:00</span></li>
+                        <li>Sat - Sun - <span>9:00 - 12:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about section-->
+    <!--<section class="feature-section section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-content">
+                        <div class="section-title text-center">
+                            <h3><span>Our Panels</span></h3>-->
+    <!--<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni in at debitis <br> nam error officia vero tempora alias? Sunt?</p>-->
+    <!--</div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <div class="icon-box">
+                                        <figure>
+                                            <a href="services.html"><img loading="lazy" src="images/resource/1.png" alt="features image"></a>
+                                        </figure>
+                                    </div>
+                                    <h3 class="mb-2">Orthopedics</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+                                        ex sunt, est aspernatur
+                                        at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <div class="icon-box">
+                                        <figure>
+                                            <a href="services.html">
+                                                <img loading="lazy" src="images/resource/2.png" alt="features image">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <h3 class="mb-2">Diaginostic</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+                                        ex sunt, est aspernatur
+                                        at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <div class="icon-box">
+                                        <figure>
+                                            <a href="services.html">
+                                                <img loading="lazy" src="images/resource/3.png" alt="features image">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <h3 class="mb-2">Psycology</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+                                        ex sunt, est aspernatur
+                                        at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="item">
+                                    <div class="icon-box">
+                                        <figure>
+                                            <a href="services.html">
+                                                <img loading="lazy" src="images/resource/4.png" alt="features image">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                    <h3 class="mb-2">General Treatment</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
+                                        ex sunt, est aspernatur
+                                        at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--End about section-->
+    <!--Start about us area-->
+    <section class="service-tab-section section">
+        <div class="outer-box clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Nav tabs -->
+                        <div class="tabs mb-5">
+                            <ul class="nav nav-tabs justify-content-center" id="aboutTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="dormitory-tab" data-toggle="tab" href="#dormitory" role="tab" aria-controls="dormitory" aria-selected="true">Nutrigenomics</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="orthopedic-tab" data-toggle="tab" href="#orthopedic" role="tab" aria-controls="orthopedic" aria-selected="false">Pharmacogenomics</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="sonogram-tab" data-toggle="tab" href="#sonogram" role="tab" aria-controls="sonogram" aria-selected="false">Fitness Genomics</a>
+                                </li>
+                                @*<li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="x-ray-tab" data-toggle="tab" href="#x-ray" role="tab" aria-controls="x-ray" aria-selected="false">x-ray</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="diagnostic-tab" data-toggle="tab" href="#diagnostic" role="tab" aria-controls="diagnostic" aria-selected="false">diagnostic</a>
+                                    </li>*@
+                            </ul>
+                        </div>
+                        <!--Start single tab content-->
+                        <div class="tab-content" id="aboutTab">
+                            <div class="service-box tab-pane fade show active" id="dormitory">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img loading="lazy" class="img-fluid" src="~/images/services/services.jpeg" alt="service-image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="contents">
+                                            <div class="section-title">
+                                                <h3>Nutrigenomics</h3>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Nutritional Genomics, or Nutrigenomics, is a multidisciplinary science which deals with the study of how our food interacts with our genes and how our genes determine our response to our food or certain chemicals found in our food. Nutrigenomics is being hailed as a science which has the potential to prevent, alleviate or even treat certain chronic diseases, by simply making slight changes to what we eat.
+                                                </p>
+                                            </div>
+                                            <ul class="content-list">
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>Cells are the embodiment of our body
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>Our DNA: Guiding the cellular processes
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>The link between your genes and food
+                                                </li>
+                                            </ul>
+                                            <a href=@Url.Action("Nutrigenomics", "Home" ) class="btn btn-style-one">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End single tab content-->
+                            <!--Start single tab content-->
+                            <div class="service-box tab-pane fade" id="orthopedic">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img loading="lazy" class="img-fluid" src="images/services/service-two.jpg" alt="service-image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="contents">
+                                            <div class="section-title">
+                                                <h3>Pharmacogenomics</h3>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    Pharmacogenomics is the study of how genes affect a person's response to drugs. This is relatively a new field of science that combines the understanding of pharmacology (the science of drugs) and genomics (the study of genes and their functions) to develop effective, safe medications and doses that will be tailored according to a person's genetic makeup...
+                                                </p>
+                                            </div>
+                                            <ul class="content-list">
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>Psychiatry Support
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>CARDIAC SUPPORT
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>FERTILITY SUPPORT
+                                                </li>
+                                            </ul>
+                                            <a href=@Url.Action("Pharmacogenomics", "Home") class="btn btn-style-one">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End single tab content-->
+                            <!--Start single tab content-->
+                            <div class="service-box tab-pane fade" id="sonogram">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <img loading="lazy" class="img-fluid" src="images/services/service-three.jpg" alt="service-image">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="contents">
+                                            <div class="section-title">
+                                                <h3>Fitness Genomics</h3>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    To see one’s child become a sporting superstar is the dream of many parents. For this reason, they plan to provide sports training to their children from a very young age. But little does one know that many factors that determine whether a young child will excel in sport and become a sports star are written in his/her genes. All this information can then be collated to devise the perfectly customized diet, exercise, and training regimen to help the child unleash her true potential and climb the pedestal of sporting glory.
+                                                </p>
+                                            </div>
+                                            <ul class="content-list">
+                                                <li>
+                                                    <i class="far fa-dot-circle"></i>Unlock the hidden potential in your genes to make success real
+                                                </li>
+                                                @*<li>
+                                                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                                                        involves
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                                                        involves
+                                                    </li>*@
+                                            </ul>
+                                            <a href=@Url.Action("Fitnessgenomics", "Home") class="btn btn-style-one">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End single tab content-->
+                            <!--Start single tab content-->
+                            @*<div class="service-box tab-pane fade" id="x-ray">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img loading="lazy" class="img-fluid" src="images/services/service-four.jpg" alt="service-image">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="contents">
+                                                <div class="section-title">
+                                                    <h3>x-ray</h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p>
+                                                        The implant fixture is first placed, so that it ilikely to osseointegrate,
+                                                        then a dental prosthetic is added.
+                                                        then a dental prosthetic is added.then a dental pros- thetic is added.
+                                                    </p>
+                                                    <p>
+                                                        The implant fixture is first placed, so that it ilikely to osseointegrate,
+                                                        then a dental prosthetic is added.
+                                                        then a dental prosthetic is added.then a dental pros- thetic is added.
+                                                    </p>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                                                        involves
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
+                                                        involves
+                                                    </li>
+                                                </ul>
+                                                <a href="services.html" class="btn btn-style-one">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>*@
+                            <!--End single tab content-->
+                            <!--Start single tab content-->
+                            @*<div class="service-box tab-pane fade" id="diagnostic">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img loading="lazy" class="img-fluid" src="images/services/service-five.jpg" alt="service-image">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="contents">
+                                                <div class="section-title">
+                                                    <h3>Nutrigenomics</h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p>
+                                                        Nutritional Genomics, or Nutrigenomics, is a multidisciplinary science which deals with the study of how our food interacts with our genes and how our genes determine our response to our food or certain chemicals found in our food. Nutrigenomics is being hailed as a science which has the potential to prevent, alleviate or even treat certain chronic diseases...
+                                                    </p>
+                                                </div>
+                                                <ul class="content-list">
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Cells are the embodiment of our body
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>Our DNA: Guiding the cellular processes
+                                                    </li>
+                                                    <li>
+                                                        <i class="far fa-dot-circle"></i>The link between your genes and food
+                                                    </li>
+                                                </ul>
+                                                <a href="services.html" class="btn btn-style-one">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>*@
+                            <!--End single tab content-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End about us area-->
+    <!--Service Section-->
+    <section class="service-section bg-gray section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>
+                    Provided
+                    <span>Services</span>
+                </h3>
+                <p>
+                    Simplifying healthy lifestyle combining nutrition and genomics<br>
+                    Unlock the hidden potential in your genes to make success real<br>
+                    A new way to cure – Personalised medicine
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="items-container">
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="/images/gallery/Nutrigenomics-Market.png" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>Health Genomics</h6>
+                                    </a>
+                                    <p>Management of lifestyle diseases, mapping of disease tendencies (diabetes, cardiac diseases, inflammatory conditions …) and preventive health management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="~/images/gallery/weight-managment.jpg" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>Slim Genomics</h6>
+                                    </a>
+                                    <p>Gene based personalized Diet, Exercise and Behavior modification for achieving weight loss. Mapping of weight loss and weight regain tendency for weight management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="~/images/gallery/psychiatry.jpeg" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>Psychiatry Support</h6>
+                                    </a>
+                                    <p>Mutations covered: Major mutations (>20 in basics and > 40 in Plus) relevant to Psychiatry medications are screened under this panel. PSYCHIATRY PGx brings in personalized medicine...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="~/images/gallery/estrogen.jpg" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>PCOS Genomics</h6>
+                                    </a>
+                                    <p>Management of lifestyle diseases, mapping of disease tendencies (diabetes, cardiac diseases, inflammatory conditions …) and preventive health management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="~/images/gallery/methylation.jpg" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>Methylation</h6>
+                                    </a>
+                                    <p>Maps and manages genetic bases of vitamin B deficiencies (B6, B9, B12) and associated health issues (cardiac, infertility, abortions, anaemia, anxiety …).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="img_holder">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <img loading="lazy" src="~/images/gallery/fertility.png" alt="images" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="image-content text-center">
+                                    <a href=@Url.Action("Nutrigenomics", "Home" )>
+                                        <h6>Fertility Support</h6>
+                                    </a>
+                                    <p>Fertility Support is pharmacogenomic testing panel which screens important genes which are associated with overall Ovarian response. It includes suggestions on use of...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Service Section-->
+
+    <section class="latest-blog how-work">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>
+                    How Does It Work
+                </h3>
+                <!--<h1 class="section-title text-center"></h1>-->
+                <div class="mb-0">
+                    <div>
+                        <img loading="lazy" class="img-fluid" src="images/how-does-it-work.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--team section-->
+    <!--<section class="team-section section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>
+                    Our Expert
+                    <span>Doctors</span>
+                </h3>-->
+                @*<p class="mb-0">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
+                        <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?
+                    </p>*@
+            <!--</div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <img loading="lazy" src="~/images/team/doctor-1.jpg" alt="doctor" class="img-fluid">
+                        <div class="contents text-center">
+                            <h4>Dr. Kaveri Chougule</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
+                            <a href=@Url.Action("Appointment", "Home" ) class="btn btn-main">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <img loading="lazy" src="~/images/team/doctor-2.jpg" alt="doctor" class="img-fluid">
+                        <div class="contents text-center">
+                            <h4>Dr. Kaveri Chougule</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
+                            <a href=@Url.Action("Appointment", "Home" ) class="btn btn-main">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-member">
+                        <img loading="lazy" src="~/images/team/doctor-3.jpg" alt="doctor" class="img-fluid">
+                        <div class="contents text-center">
+                            <h4>Dr. Kaveri Chougule</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
+                            <a href=@Url.Action("Appointment", "Home" ) class="btn btn-main">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--End team section-->
+    <!--testimonial-section-->
+    <!--<section class="testimonial-section" style="background: url(../images/testimonials/1.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3>
+                            What Our
+                            <span>Patients Says</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial-carousel">-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/5f8fc1a8bd815.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Chennai Based IT Professional</h6>
+                                <p class="mb-0">
+                                    I had been facing several idiopathic health issues like continuous full body itching and redness, which worsened when I consumed sour foods and also by heat. I have tried many medications and have been visiting doctors since a long time. Every medication that I ever took was to manage my condition of itchings but the real cause and treatment was still a mystery to me. After discussing my issues with the counsellors at Genetic Healing, I was advised to undergo Health Panel, that gave me a broad idea that my genes weren’t supporting methylation in my body to the fullest extent.
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/5ed1f69557ac4.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Jaipur Based Businessman</h6>
+                                <p class="mb-0">
+                                    Nutrigenomics was a wonderful experience for me, having many complex health issues like overweight my weight from 84 kg since last 4 years and not reduced after many efforts bally fat was always making me uncomfortable and affecting my look and working lifestyle due to dyspnea, having Type 2 diabetes and insulin intake 20 unit in before breakfast and 16 unit before dinner, which is reduced at 14 unit in before breakfast and 12 unit before dinner. I reduced weight around 76 kg. Having managed lifestyle and implementing the diet, exercise as advised by diet counselor. I strongly recommending Nutrigenomics for all.
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/3.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Amy Adams</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/1.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Adam Rose</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/2.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>David Warner</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/3.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Amy Adams</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/1.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Adam Rose</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/2.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>David Warner</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>-->
+                        <!--Slide Item-->
+                        <!--<div class="slide-item">
+                            <div class="inner-box text-center">
+                                <div class="image-box">
+                                    <figure>
+                                        <img loading="lazy" src="~/images/testimonials/3.png" alt="">
+                                    </figure>
+                                </div>
+                                <h6>Amy Adams</h6>
+                                <p class="mb-0">
+                                    Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
+                                    ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--End testimonial-section-->
+    <!-- Contact Section -->
+    <section class="appoinment-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-section">
+                        <div class="section-title">
+                            <h3>FAQ</h3>
+                        </div>
+                        <div class="accordion-holder">
+                            <div class="accordion" id="accordionGroup" role="tablist" aria-multiselectable="true">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h4 class="card-title">
+                                            <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Why don't identical twins look the same?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Identical twins look slightly different, even though they have identical DNA. Small differences in their environment, life, and experiences can make a big difference! This includes things like diet, exercise, sleep, sun exposure, and more.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h4 class="card-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                Why can't genetic tests predict all diseases?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Some diseases are hard to predict because they are caused by a lot of different genes along with environmental influence. These are known as "complex diseases." Nutrigenomics is a new field of science that works on the age-old principle of “Let food be thy medicine”. It is the study of the interplay between the genetic information an individual carries and nutrition, fitness and health aspects.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h4 class="card-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                What is Gene testing?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Genetic testing, also known as DNA test is used to identify and assess the underlying genetic information of an individual. Such that it guides the doctors and Nutrigenomics counsellor about the predisposition of a disease or genetic condition in a person. You can also say that genetic testing helps in determining the chances or probability of developing or passing on a condition in an individual such as diabetes, PCOS, cardiac issues, weight loss/gain efficiency and much more. Nutrigenomics is a new field of science that works on the age-old principle of “Let food be thy medicine”. It is the study of the interplay between the genetic information an individual carries and nutrition, fitness and health aspects.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-area pl-0 pl-lg-5">
+                        <div class="section-title">
+                            <h3>
+                                Request
+                                <span>Appointment</span>
+                            </h3>
+                        </div>
+                        <form name="contact_form" class="default-form contact-form" enctype="multipart/form-data" asp-controller="home" asp-action="send" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" asp-for="Email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" asp-for="subject">
+                                            <option>Nutrigenomics</option>
+                                            <option>Fitness Genomics</option>
+                                            <option>Pharmacogenomics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Phone" placeholder="Phone" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Date" placeholder="Date" required="" id="datepicker" autocomplete="off">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" asp-for="service">
+                                            <option>Doctor</option>
+                                            <option>Diagnostic</option>
+                                            <option>Psychological</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" asp-for="form_message" placeholder="Your Message" required=""></textarea>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn-style-one">submit now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+</div>

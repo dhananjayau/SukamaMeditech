@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/css/main.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/bootstrap.min.css",
+      "wwwroot/lib/slick/slick.css",
+      "wwwroot/lib/slick/slick-theme.css",
+      "wwwroot/lib/fancybox/jquery.fancybox.min.css",
+      "wwwroot/lib/fontawesome/css/all.min.css",
+      "wwwroot/lib/animation/animate.min.css",
+      "wwwroot/lib/jquery-ui/jquery-ui.css",
+      "wwwroot/lib/timePicker/timePicker.css",
+      "wwwroot/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/main.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery.min.js",
+      "wwwroot/lib/bootstrap/bootstrap.min.js",
+      "wwwroot/lib/slick/slick.min.js",
+      "wwwroot/lib/slick/slick-animation.min.js",
+      "wwwroot/lib/fancybox/jquery.fancybox.min.js",
+      "wwwroot/lib/google-map/gmap.js",
+      "wwwroot/lib/jquery-ui/jquery-ui.js",
+      "wwwroot/lib/timePicker/timePicker.js",
+      "wwwroot/js/script.js"
+    ]
+  }
+]

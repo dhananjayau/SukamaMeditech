@@ -1,0 +1,255 @@
+﻿@model Rocky.Models.MailRequest
+@{
+    ViewData["Title"] = "About";
+}
+
+<div>
+
+    <!--Page Title-->
+    <section class="page-title text-center" style="background-image: url(../images/background/3.jpg);">
+        <div class="container">
+            <div class="title-text">
+                <h1>about us</h1>
+                <ul class="title-menu clearfix">
+                    <li>
+                        <a href=@Url.Action("Index", "Home")>home &nbsp;/</a>
+                    </li>
+                    <li>about us</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+    <!-- Our Story -->
+    <section class="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img loading="lazy" src="~/images/gallery/384.jpg" class="responsive" alt="story">
+                </div>
+                <div class="col-lg-6">
+                    <div class="story-content">
+                        @*<h2>Our Story</h2>*@
+                        <h5 class="tagline">"Sukama Meditech is instrumental in accelerating the idea of wellbeing among people across the globe by introducing the concepts of Nutrigenomics and Pharmacogenomics. Being India’s largest Nutrigeomics organization, it is backed by fully equipped and technologically advanced laboratory"</h5>
+                        <p>
+                            – GeneOmbio Technologies. The organization has been accredited by both national and international institution, assuring you the credibility of our product and services. At GeneSupport we offer a wide range of Nutrigenomics and Pharmacogenomics based test panels to help you transform your life by optimizing what you eat. The concepts highlights the importance of “Eat what you are” i.e. as per your genetic information. Our experts are instrumental in helping you understand what suits best for you by providing personalized solutions. Our goal is to meet the needs of our customers by offering superior quality services that bring true value. Since the concepts of Nutrigenomics and Pharmacogenomics are very recent, we consider our responsibility to help introduce experts to this new concepts. In light of this, we offer wide range of training and internship services to students, dieticians and researchers. We also offer molecular diagnostic services, contract research services, and animal genetic services across the country.
+                        </p>
+                        <h6>Mission</h6>
+                        <p>
+
+                        </p>
+                        <h6>Vision</h6>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Video -->
+    <section class="promo-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="block text-center">
+                        <h6>About Our Clinic</h6>
+                        <h1>
+                            The World <br>
+                            Class Hospitality
+                        </h1>
+                        <a data-fancybox
+                           href="https://youtu.be/filzz-fH6_U"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3>
+                            Collected Shots
+                            <span>of Our Clinic</span>
+                        </h3>
+                        <p>
+                            Leverage agile frameworks to provide a robust synopsis for high level overv-
+                            <br>iews. Iterative approaches to corporate strategy...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/gallery-01.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/gallery-01.jpg"></a>
+                        <h3>Facility 01</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/384.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/384.jpg"></a>
+                        <h3>Facility 02</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/gallery-03.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/gallery-03.jpg"></a>
+                        <h3>Facility 03</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/gallery-04.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/gallery-04.jpg"></a>
+                        <h3>Facility 04</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/gallery-05.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/gallery-05.jpg"></a>
+                        <h3>Facility 05</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img loading="lazy" src="~/images/gallery/gallery-06.jpg" class="img-fluid" alt="gallery-image">
+                        <a data-fancybox="images" href="~/images/gallery/gallery-06.jpg"></a>
+                        <h3>Facility 06</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="appoinment-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion-section">
+                        <div class="section-title">
+                            <h3>FAQ</h3>
+                        </div>
+                        <div class="accordion-holder">
+                            <div class="accordion" id="accordionGroup" role="tablist" aria-multiselectable="true">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOne">
+                                        <h4 class="card-title">
+                                            <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Why don't identical twins look the same?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Identical twins look slightly different, even though they have identical DNA. Small differences in their environment, life, and experiences can make a big difference! This includes things like diet, exercise, sleep, sun exposure, and more.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwo">
+                                        <h4 class="card-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                Why can't genetic tests predict all diseases?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Some diseases are hard to predict because they are caused by a lot of different genes along with environmental influence. These are known as "complex diseases." Nutrigenomics is a new field of science that works on the age-old principle of “Let food be thy medicine”. It is the study of the interplay between the genetic information an individual carries and nutrition, fitness and health aspects.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThree">
+                                        <h4 class="card-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                What is Gene testing?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
+                                        <div class="card-body">
+                                            Genetic testing, also known as DNA test is used to identify and assess the underlying genetic information of an individual. Such that it guides the doctors and Nutrigenomics counsellor about the predisposition of a disease or genetic condition in a person. You can also say that genetic testing helps in determining the chances or probability of developing or passing on a condition in an individual such as diabetes, PCOS, cardiac issues, weight loss/gain efficiency and much more. Nutrigenomics is a new field of science that works on the age-old principle of “Let food be thy medicine”. It is the study of the interplay between the genetic information an individual carries and nutrition, fitness and health aspects.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-area pl-0 pl-lg-5">
+                        <div class="section-title">
+                            <h3>
+                                Request
+                                <span>Appointment</span>
+                            </h3>
+                        </div>
+                        <form name="contact_form" class="default-form contact-form" enctype="multipart/form-data" asp-controller="home" asp-action="send" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" asp-for="Email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" asp-for="subject">
+                                            <option>Nutrigenomics</option>
+                                            <option>Fitness Genomics</option>
+                                            <option>Pharmacogenomics</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Phone" placeholder="Phone" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" asp-for="Date" placeholder="Date" required="" id="datepicker" autocomplete="off">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" asp-for="service">
+                                            <option>Doctor</option>
+                                            <option>Diagnostic</option>
+                                            <option>Psychological</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" asp-for="form_message" placeholder="Your Message" required=""></textarea>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn-style-one">submit now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+
+</div>
